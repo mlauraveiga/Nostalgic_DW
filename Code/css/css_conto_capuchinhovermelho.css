@@ -1,0 +1,80 @@
+.ola{
+    height: 150vh;
+}
+
+/*-----------------------------------*/
+/*--------------BLOCK 1--------------*/
+/*-----------------------------------*/
+.bloco1_container{
+    display: grid ;
+    grid-template-columns: 50% 50%;
+    column-gap: 10%;
+    align-items: center;
+}
+
+.capuchinho{
+    grid-column-start: 1; 
+   place-self: center;
+}
+
+.lobo{
+    grid-column-start: 2;
+    place-self: center;
+}
+
+#img_fala_dir, #img_fala_esq{
+    position: absolute;
+}
+
+#img_fala_dir{
+    left:43%;
+}
+
+#img_fala_esq{
+   padding-top: 10%;
+    left:30%;
+}
+
+#capuchinho_fala1, #capuchinho_fala2, #lobo_fala1, #lobo_fala2 {
+    
+    position: absolute;
+    width: 20%;
+    z-index: 1;
+}
+
+#lobo_fala1{
+    text-align: center;
+    padding-top: 2.5%;
+    right:42%;
+    width:15%;
+    opacity:100%;
+}
+
+#capuchinho_fala1{
+    text-align: center;
+    padding-top: 13%;
+    left:31%;
+    width:15%;
+    opacity:0%;
+}
+
+#lobo_fala2{
+    text-align: center;
+    padding-top: 2%;
+    right:42%;
+    width:15%;
+}
+
+#capuchinho_fala2{
+    font-size: 90%;
+    text-align: center;
+    padding-top: 10.5%;
+    left:32.5%;
+    width:12%;
+}
+
+
+
+#capuchinho_fala2, #lobo_fala2{
+    opacity: 0;
+}
