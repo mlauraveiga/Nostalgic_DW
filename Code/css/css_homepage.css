@@ -1,0 +1,80 @@
+/*HOMEPAGE*/
+/*destaques - 3 contos*/
+.destaques{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.destaque1 img, .destaque2 img, .destaque3 img {
+    display: block;
+    transition: 1s;
+}
+
+.destaque1 img:hover, .destaque2 img:hover, .destaque3 img:hover {
+    transform: scale(1.1);
+}
+
+.destaques > div > h3{
+    font-family: Poppins, sans-serif;
+    text-align: center;
+}
+
+/*ordenar contos*/
+.ordenar{
+    background-color: #F0E1DD;
+    border: #F0E1DD;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 20px;
+    width: 20%;
+    text-align: left;
+    font-family: Poppins, sans-serif;
+    font-size: 10pt;
+    margin-top: 5%;
+    margin-left: 71%;
+}
+
+.info{
+    padding: 0 19px;
+    background-color: #F0E1DD;
+    display: none;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 17%;
+    text-align: left;
+    margin-left: 71%;
+}
+
+.info > p {
+    font-family: Poppins, sans-serif;
+    font-size: 10pt;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+/*outros contos*/
+.contos_1, .contos_2, .contos_3, .contos_4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-top: 2%;
+}
+
+.contos1, .contos2, .contos3, .contos4, .contos5, .contos6,
+.contos7, .contos8, .contos9, .contos10, .contos11, .contos12,
+.contos13, .contos14, .contos15, .contos16 {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+.tituloconto {
+    font-family: Poppins, sans-serif;
+    text-align: center;
+}
