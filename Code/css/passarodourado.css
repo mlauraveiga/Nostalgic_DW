@@ -361,5 +361,27 @@
 
 
 
+/*-----------------------------------*/
+/*--------------BLOCK 1--------------*/
+/*-----------------------------------*/
+.block12_container{
+    display: grid ;
+    grid-template-columns: 100%;
+    grid-template-rows: 100% 100% 50% 50% 25% 100%;
+    row-gap: 10%;
+    align-items: center;
+}
+/*--------------text--------------*/
+#txt12{
+    grid-row-start: 5;
+    padding: 10% 5% 3%; 
+    place-self: center;
+}
+/*--------------imagens--------------*/
+.img12{
+    grid-row-start: 4;
+    place-self: center;
 
+  
+}
 
