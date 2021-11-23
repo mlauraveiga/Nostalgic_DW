@@ -5,11 +5,9 @@
 ### HTML
 
 Nome tipo: *nomepagina*.html 
-
 (exemplo: Homepage -> homepage.html)
 
 Conto: conto_*nomeconto*.html 
-
 (exemplo: Conto Capuchinho Vermelho -> conto_capuchinhovermelho.html)
 
 
