@@ -2,6 +2,19 @@ body {
     background-color: #F8F4F2;
 }
 
+
+p, h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    line-height: 16pt;
+    color:2B3034;
+}
+
+h1{
+    font-family: "Baskerville", serif; 
+    font-weight: normal; 
+    font-size: 8vw;
+}
 /*HEADER*/
 .menu{
     color: black;
