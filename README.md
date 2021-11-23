@@ -15,20 +15,20 @@ Conto: conto_*nomeconto*.html
 ### CSS
 
 Nome tipo: css_*nomepagina*.css 
-
 (exemplo: Homepage -> css_homepage.css)
 
 Conto: css_conto_*nomeconto*.css 
-
 (exemplo: Conto Capuchinho Vermelho -> css_conto_capuchinhovermelho.css)
 
 
 
 ### JS
 
-Nome tipo: js_*nomepagina*.js (exemplo: Homepage -> js_homepage.js)
+Nome tipo: js_*nomepagina*.js 
+(exemplo: Homepage -> js_homepage.js)
 
-Conto: js_conto_*nomeconto*.js (exemplo: Conto Capuchinho Vermelho -> js_conto_capuchinhovermelho.js)
+Conto: js_conto_*nomeconto*.js 
+(exemplo: Conto Capuchinho Vermelho -> js_conto_capuchinhovermelho.js)
 
 
 
