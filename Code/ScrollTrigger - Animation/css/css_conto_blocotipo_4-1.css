@@ -1,6 +1,8 @@
-*, :after, :before {
+*,
+:after,
+:before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-collapse: inherit;
   padding: 0;
   margin: 0;
@@ -8,7 +10,7 @@
 
 html {
   height: 100%;
-  background: #F8F4F2;
+  background: #f8f4f2;
 }
 
 html body {
@@ -28,31 +30,31 @@ html body {
   overflow: hidden;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .video-container {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   width: 100%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 #video {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   background-color: #000;
   opacity: 1;
   visibility: visible;
@@ -68,11 +70,11 @@ html body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   position: relative;
   height: 100vh;
   width: 100%;
@@ -84,7 +86,7 @@ html body {
   font-weight: normal;
   font-size: 25px;
   line-height: 137.5%;
-  color: #2B3034;
+  color: #2b3034;
 }
 
 #bt43 {
@@ -104,7 +106,12 @@ html body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 /*# sourceMappingURL=css_conto_blocotipo_4-1.css.map */
+
+.divteste {
+  width: 100vw;
+  height: 100vh;
+}
