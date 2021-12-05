@@ -94,7 +94,7 @@
 .block3_container {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 100% 50% 50%;
+  grid-template-rows: 25% 100% 100% 50%;
   row-gap: 10%;
   align-items: center;
 }
@@ -126,6 +126,20 @@
   position: relative;
   
   */
+}
+
+.blocos {
+  /*display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;*/
+  position: relative;
 }
 
 /*.background-container {
