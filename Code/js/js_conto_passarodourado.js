@@ -4,7 +4,7 @@ gsap.to("section.cover-container", {
     trigger: ".content",
     start: "top bottom",
     end: "=66%",
-    markers: true,
+    // markers: true,
     scrub: true,
   },
   yPercent: -50,
@@ -64,7 +64,7 @@ function scrollTrigger() {
     trigger: "#videobox",
     start: "top top",
     end: "bottom bottom",
-    markers: true,
+    // markers: true,
     pin: "",
   });
 
@@ -87,6 +87,17 @@ function scrollTrigger() {
     );
   });
 }
-
-// Chamar função tempo
-tempo();
+/*--------------------------------------
+-----------------BLOCO 11---------------
+---------------------------------------
+  gsap.timeline({
+    scrollTrigger: {
+      trigger: ".block11_container",
+      start: "top 50%",
+      end: "bottom",
+      scrub: true,
+      markers: true,
+      pin: true,
+    },
+  })
+  .from("#img_saddle", { y: innerHeight * -1.5 });*/
