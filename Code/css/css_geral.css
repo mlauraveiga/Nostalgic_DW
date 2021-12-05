@@ -1,38 +1,41 @@
 body {
-    background-color: #F8F4F2;
+  background-color: #f8f4f2;
+  margin: 0;
 }
 
-
-p, h1{
-    font-family: "Poppins", sans-serif;
-    font-weight: normal;
-    line-height: 16pt;
-    color:2B3034;
+p,
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: normal;
+  line-height: 16pt;
+  color: 2b3034;
 }
 
-h1{
-    font-family: "Baskerville", serif; 
-    font-weight: normal; 
-    font-size: 8vw;
+h1 {
+  font-family: "Baskerville", serif;
+  font-weight: normal;
+  font-size: 8vw;
 }
 /*HEADER*/
-.menu{
-    color: black;
-    font-family: Poppins, sans-serif;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: left;
-    margin-left: 5%;
-    padding-bottom: 2%;
+.menu {
+  color: black;
+  font-family: Poppins, sans-serif;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin-left: 5%;
+  margin-top: 2%;
 }
 
 .menu > a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
-.imagemhome, .imagempesquisa, .imagemabout {
-    margin-bottom: 20%;
+.imagemhome,
+.imagempesquisa,
+.imagemabout {
+  margin-bottom: 20%;
 }
