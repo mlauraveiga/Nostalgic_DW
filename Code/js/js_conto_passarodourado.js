@@ -1,5 +1,5 @@
 // Cover
-gsap.to("section.header-container", {
+gsap.to("section.cover-container", {
   scrollTrigger: {
     trigger: ".content",
     start: "top bottom",
