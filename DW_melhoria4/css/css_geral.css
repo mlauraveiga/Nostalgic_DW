@@ -1,0 +1,25 @@
+body {
+    background-color: #F8F4F2;
+}
+
+/*HEADER*/
+.menu{
+    color: black;
+    font-family: Poppins, sans-serif;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 5%;
+    /*margin-top: -40%;*/
+}
+
+.menu > a {
+    text-decoration: none;
+    color: black;
+}
+
+.imagemhome, .imagempesquisa, .imagemabout {
+    margin-bottom: 20%;
+}
