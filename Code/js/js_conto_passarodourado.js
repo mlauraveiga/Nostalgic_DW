@@ -18,7 +18,7 @@ gsap.to("section.cover-container", {
 
 ScrollTrigger.create({
   trigger: ".block2_container",
-  start: "top 15%",
+  start: "top 25%",
   end: "bottom bottom",
   scrub: true,
   pin: true,
@@ -30,11 +30,11 @@ gsap.to("#jexp1", {
   ease: "none",
   scrollTrigger: {
     trigger: ".block2_container",
-    start: "top 15%",
+    start: "top 25%",
     end: "bottom bottom",
     scrub: true,
     pin: true,
-    markers: true,
+    //markers: true,
   },
 });
 
@@ -43,7 +43,7 @@ gsap.to("#jexp2", {
   ease: "none",
   scrollTrigger: {
     trigger: ".block2_container",
-    start: "top 15%",
+    start: "top 25%",
     end: "bottom bottom",
     scrub: true,
     pin: true,
@@ -72,6 +72,10 @@ gsap.to(".div_img4", {
     pin: true,
   },
 });
+
+/*-----------------------------------*/
+/*-----------------------------------*/
+/*-----------------------------------*/
 
 /*-----------------------------------*/
 /*--------------BLOCK 5--------------*/
@@ -126,10 +130,10 @@ gsap.to(".div_img8", {
   duration: 8,
   scrollTrigger: {
     trigger: ".block8_container",
-    start: "top top",
+    start: "top 25%",
     end: "bottom top",
     scrub: 1,
-    //markers: true,
+    // markers: true,
     pin: true,
   },
 });
@@ -149,3 +153,18 @@ gsap
     },
   })
   .from("#img_saddle", { y: innerHeight * -1.5 });**/
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.create({
+  trigger: ".fundo",
+  start: "top",
+  //markers: true,
+  toggleClass: "fundo2",
+});
+
+gsap.registerPlugin(ScrollTrigger);
+ScrollTrigger.create({
+  trigger: ".txt15",
+  start: "top top",
+  //markers: true,
+  toggleClass: "txt15_2",
+});

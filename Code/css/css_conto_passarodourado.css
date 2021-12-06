@@ -84,7 +84,9 @@
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
-  padding: 10% 5% 3%;
+  padding-top: 5%;
+  width: 60%;
+  place-self: center;
 }
 /*--------------imagens--------------*/
 .img1 {
@@ -153,8 +155,7 @@
 /*-----------------------------------*/
 .block3_container {
   display: grid;
-  grid-template-columns: 50% 50%;
-  column-gap: 5%;
+  grid-template-columns: 50% auto;
   grid-template-rows: 100%;
   padding-bottom: 25%;
   align-items: center;
@@ -162,7 +163,8 @@
 #txt3 {
   grid-column-start: 2;
   top: 10%;
-  width: 60%;
+  width: 70%;
+  place-self: center;
 }
 
 #video {
@@ -193,7 +195,7 @@
 
 .background-container {
   position: absolute;
-  left: 10%;
+  left: 5%;
 
   transform: translate(0, -50%);
   width: 40%;
@@ -237,7 +239,7 @@
   grid-template-columns: 33% auto 33%;
   grid-template-rows: 50% 50%;
   row-gap: 10%;
-  padding-bottom: 20%;
+  padding-bottom: 25%;
   align-items: center;
 }
 #txt4 {
@@ -249,12 +251,6 @@
   top: 10%;
   place-self: center;
 }
-
-/*.div_img4 {
-  grid-column-start: 1;
-  grid-column-end: 4;
-  grid-row-start: 2;
-}*/
 
 #img4 {
   position: absolute;
@@ -268,7 +264,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
-  padding-bottom: 10%;
+  padding-bottom: 15%;
   align-items: center;
 }
 
@@ -314,6 +310,7 @@
   grid-column-start: 1;
   grid-column-end: 1;
   grid-row-start: 1;
+  padding-left: 5%;
   place-self: center;
 }
 
@@ -351,7 +348,7 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 40% 60%;
-  padding-bottom: 10%;
+  padding-bottom: 30%;
   align-items: center;
 }
 
@@ -359,7 +356,7 @@
   grid-column-start: 1;
   grid-row-start: 1;
   place-self: center;
-  width: 70%;
+  width: 60%;
 }
 /*.div_img8 {
   grid-column-start: 1;
@@ -476,6 +473,7 @@
 
 #img_saddle {
   left: 17.5%;
+  padding-top: 1%;
   position: absolute;
 }
 
@@ -519,6 +517,21 @@
   place-self: center;
 }
 
+#img_raposa3 {
+  right: 10%;
+  position: absolute;
+}
+
+#img_raposa4 {
+  right: 20%;
+  position: absolute;
+}
+
+#img_raposa5 {
+  right: 30%;
+  position: absolute;
+}
+
 /*-----------------------------------*/
 /*-------------BLOCK 15--------------*/
 /*-----------------------------------*/
@@ -526,12 +539,26 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 100%;
-  padding-bottom: 35%;
   align-items: center;
 }
 /*--------------text--------------*/
-#txt15 {
+.txt15 {
   grid-row-start: 5;
   place-self: center;
   width: 60%;
+  padding: 15% 20%;
+}
+
+.fundo {
+  padding-top: 10%;
+  height: 90vh;
+}
+.txt15_2 {
+  grid-row-start: 5;
+  place-self: center;
+  width: 60%;
+}
+
+.fundo2 {
+  background-color: #ffd645;
 }
