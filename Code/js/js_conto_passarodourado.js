@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 // Cover
 gsap.to("section.cover-container", {
   scrollTrigger: {
@@ -16,7 +18,7 @@ gsap.to("section.cover-container", {
 
 ScrollTrigger.create({
   trigger: ".block2_container",
-  start: "top 10%",
+  start: "top 15%",
   end: "bottom bottom",
   scrub: true,
   pin: true,
@@ -28,11 +30,11 @@ gsap.to("#jexp1", {
   ease: "none",
   scrollTrigger: {
     trigger: ".block2_container",
-    start: "top 10%",
+    start: "top 15%",
     end: "bottom bottom",
     scrub: true,
     pin: true,
-    //markers: true,
+    markers: true,
   },
 });
 
@@ -41,7 +43,7 @@ gsap.to("#jexp2", {
   ease: "none",
   scrollTrigger: {
     trigger: ".block2_container",
-    start: "top 10%10",
+    start: "top 15%",
     end: "bottom bottom",
     scrub: true,
     pin: true,
@@ -55,7 +57,6 @@ gsap.to("#jexp2", {
 /*-----------------------------------*/
 /*--------------BLOCK 4--------------*/
 /*-----------------------------------*/
-gsap.registerPlugin(ScrollTrigger);
 
 var image = document.getElementById("img4");
 
@@ -63,11 +64,72 @@ gsap.to(".div_img4", {
   x: image.width,
   duration: 8,
   scrollTrigger: {
-    trigger: "#txt4",
+    trigger: ".block4_container",
     start: "top top",
     end: "bottom top",
     scrub: 1,
-    markers: true,
+    // markers: true,
+    pin: true,
+  },
+});
+
+/*-----------------------------------*/
+/*--------------BLOCK 5--------------*/
+/*-----------------------------------*/
+
+ScrollTrigger.create({
+  trigger: ".block5_container",
+  start: "top 10%",
+  end: "bottom bottom",
+  scrub: true,
+  pin: true,
+  //markers: true,
+});
+
+gsap.to("#exp1", {
+  opacity: 0,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".block5_container",
+    start: "top 20%",
+    end: "bottom bottom",
+    scrub: true,
+    pin: true,
+    //markers: true,
+  },
+});
+
+gsap.to("#exp2", {
+  opacity: 1,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".block5_container",
+    start: "top 20%",
+    end: "bottom bottom",
+    scrub: true,
+    pin: true,
+    //markers: true,
+  },
+});
+/*-----------------------------------*/
+/*-----------------------------------*/
+/*-----------------------------------*/
+
+/*-----------------------------------*/
+/*--------------BLOCK 8--------------*/
+/*-----------------------------------*/
+
+var image = document.getElementById("img8");
+
+gsap.to(".div_img8", {
+  x: image.width,
+  duration: 8,
+  scrollTrigger: {
+    trigger: ".block8_container",
+    start: "top top",
+    end: "bottom top",
+    scrub: 1,
+    //markers: true,
     pin: true,
   },
 });
@@ -75,7 +137,8 @@ gsap.to(".div_img4", {
 /*--------------------------------------
 -----------------BLOCO 11---------------
 ---------------------------------------
-  gsap.timeline({
+gsap
+  .timeline({
     scrollTrigger: {
       trigger: ".block11_container",
       start: "top 50%",
@@ -85,4 +148,4 @@ gsap.to(".div_img4", {
       pin: true,
     },
   })
-  .from("#img_saddle", { y: innerHeight * -1.5 });*/
+  .from("#img_saddle", { y: innerHeight * -1.5 });**/
