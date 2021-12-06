@@ -1,0 +1,177 @@
+/*ABOUT US*/
+@media only screen and (min-width: 1100px), only screen and (min-device-width: 1100px) {
+    .aboutus {
+        font-family: Poppins, sans-serif;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: right;
+        margin-right: 8%;
+        margin-top: 5%;
+    }
+
+    .mostrar > .imagem2 {
+        display: none;
+    }
+
+    .mostrar:hover > .imagem1 {
+        display: none;
+    }
+
+    .mostrar:hover > .imagem2 {
+        display: block;
+    }
+
+    .mostrar1 > .imagem4 {
+        display: none;
+    }
+
+    .mostrar1:hover > .imagem3 {
+        display: none;
+    }
+
+    .mostrar1:hover > .imagem4 {
+        display: block;
+    }
+
+    .mostrar2 > .imagem6 {
+        display: none;
+    }
+
+    .mostrar2:hover > .imagem5 {
+        display: none;
+    }
+
+    .mostrar2:hover > .imagem6 {
+        display: block;
+    }
+
+    .texto1 {
+        font-family: Poppins, sans-serif;
+        font-size: 12pt;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        margin-left: 5%;
+        width: 60%;
+    }
+
+    .texto2 {
+        font-family: Poppins, sans-serif;
+        font-size: 10pt;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: right;
+        text-align: right;
+        margin-right: 8%;
+    }
+
+    .texto3 {
+        font-family: Poppins, sans-serif;
+        font-size: 6pt;
+        text-align: center;
+        margin-top: 8%;
+    }
+
+    .imagemsjanelas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .mostrar, .mostrar1, .mostrar2 {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+}
+
+@media only screen and (max-device-width: 850px) {
+    .aboutus {
+        font-family: Poppins, sans-serif;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: right;
+        margin-right: 8%;
+        margin-top: 5%;
+    }
+
+    .mostrar > .imagem2 {
+        display: none;
+    }
+
+    .mostrar:hover > .imagem1 {
+        display: none;
+    }
+
+    .mostrar:hover > .imagem2 {
+        display: block;
+    }
+
+    .mostrar1 > .imagem4 {
+        display: none;
+    }
+
+    .mostrar1:hover > .imagem3 {
+        display: none;
+    }
+
+    .mostrar1:hover > .imagem4 {
+        display: block;
+    }
+
+    .mostrar2 > .imagem6 {
+        display: none;
+    }
+
+    .mostrar2:hover > .imagem5 {
+        display: none;
+    }
+
+    .mostrar2:hover > .imagem6 {
+        display: block;
+    }
+
+    .texto1 {
+        font-family: Poppins, sans-serif;
+        font-size: 16pt;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left;
+        margin-left: 5%;
+        width: 60%;
+    }
+
+    .texto2 {
+        font-family: Poppins, sans-serif;
+        font-size: 15pt;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: right;
+        text-align: right;
+        margin-right: 8%;
+    }
+
+    .texto3 {
+        font-family: Poppins, sans-serif;
+        font-size: 13pt;
+        text-align: center;
+        margin-top: 8%;
+    }
+
+    .imagemsjanelas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mostrar, .mostrar1, .mostrar2 {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+}
