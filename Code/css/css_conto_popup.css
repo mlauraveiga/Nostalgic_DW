@@ -1,0 +1,65 @@
+.exit-intent-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  background: rgba(62, 66, 70, 0.15);
+  transform: translateY(60%) scale(0);
+}
+
+.exit-intent-popup.visible  {
+    transform: translateY(0) scale(1);
+}
+
+.divpopup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #f8f4f2;
+  box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  width: 60%;
+  height: 350px;
+  vertical-align: middle;
+}
+
+.txtpopup {
+  font-family: Baskerville;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 55px;
+  text-align: center;
+  color: #000000;
+  transform: translate(0, 100%);
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  margin-right: 60px;
+}
+
+.btn {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 36px;
+  color: #000000;
+  margin-left: 15px;
+  transform: translate(0, -50%);
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 60%;
+  transform: translate(0, 70%);
+  padding-left: 50px;
+}

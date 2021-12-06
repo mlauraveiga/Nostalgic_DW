@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="css/css_geral.css">
-    <link rel="stylesheet" type="text/css" href="css/css_conto_cinderela.css">
-    <meta charset="UTF-8">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/css_geral.css" />
+    <link rel="stylesheet" type="text/css" href="css/css_conto_cinderela.css" />
+    <link rel="stylesheet" type="text/css" href="css/css_conto_popup.css" />
+    <meta charset="UTF-8" />
     <title>Cinderela</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <div >
+          <img
+            class="imagemhome"
+            src="imagens/menu/home.png"
+            alt="imagem da Homepage"
+            width="30"
+            height="30"
+            onclick="return homepage()"
+          />
+        </div>
+        <div>
+          <img
+            class="imagemabout"
+            src="imagens/menu/aboutus.png"
+            alt="imagem do About Us"
+            width="30"
+            height="38"
+            onclick="return aboutus()"
+          />
+        </div>
+      </div>
+    </header>
 
-<header>
-    <div class="menu">
-        <a href="homepage.html"><img class="imagemhome" src="imagens/menu/home.png" alt="imagem da Homepage" width="30"
-                                     height="30"/></a>
-        <a href="aboutus.html"><img class="imagemabout" src="imagens/menu/aboutus.png" alt="imagem do About Us" width="30"
-                                    height="38"/></a>
+    <div class="exit-intent-popup">
+      <div class="divpopup">
+        <h3 class="txtpopup">Deseja mesmo sair do conto?</h3>
+        <div class="botoes">
+          <a  id="link" onclick="return exit()">
+            <img
+              src="imagens/conto_popup/Ellipse 33.png"
+              width="50px"
+              height="50px"
+            />
+            <p class="btn">Sim</p>
+          </a>
+          <a href="">
+            <img
+              src="imagens/conto_popup/Ellipse 34.png"
+              width="50px"
+              height="50px"
+            />
+            <p class="btn">Não</p>
+          </a>
+        </div>
+      </div>
     </div>
-</header>
 
-<main>
-    <p class="mensagemerro">Oops! Este conto ainda está a ser desenvolvido!</p>
-</main>
+    
+  </body>
 
-</body>
+  <script src="js/js_conto_popup.js"></script>
 </html>
