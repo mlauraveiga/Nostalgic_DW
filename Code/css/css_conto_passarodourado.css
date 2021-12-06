@@ -76,6 +76,7 @@
   grid-template-columns: 33% auto 33%;
   grid-template-rows: 30% 50%;
   row-gap: 10%;
+  padding-bottom: 45%;
   align-items: center;
 }
 /*--------------text--------------*/
@@ -122,11 +123,10 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
-  padding-top: 40%;
+  padding-bottom: 10%;
   row-gap: 10%;
   align-items: center;
 }
-
 #txt2 {
   grid-column-start: 2;
   width: 70%;
@@ -136,8 +136,15 @@
   grid-column-start: 1;
   place-self: center;
 }
+#jexp1 {
+  position: absolute;
+  left: 9.4%;
+  /*opacity: 0;*/
+}
 
 #jexp2 {
+  position: absolute;
+  left: 9.4%;
   opacity: 0;
 }
 
@@ -145,46 +152,28 @@
 /*--------------BLOCK 3--------------*/
 /*-----------------------------------*/
 .block3_container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 100%;
-  row-gap: 10%;
-  padding-top: 16%;
-  align-items: center;
+  padding-bottom: 95%;
 }
 #txt3 {
-  grid-column-start: 2;
-  grid-row-start: 1;
-  padding: 10% 5% 3%;
-  place-self: center;
-  width: 70%;
+  position: absolute;
+  top: 320%;
+  left: 60%;
+  width: 30%;
+  padding-bottom: 100%;
 }
 
-/*.img3 {
-  grid-column-start: 1;
-  grid-row-start: 5;
-  place-self: center;
-}*/
-
-#videobox {
-  grid-column-start: 1;
-  grid-row-start: 1;
-  place-self: center;
-  visibility: visible;
-
-  /* Escrito Por Laura
+#video {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
   opacity: 1;
-  
+  visibility: visible;
   position: relative;
-  
-  */
+  width: 40%;
 }
 
 .blocos {
-  /*display: -webkit-box;
+  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
@@ -193,18 +182,21 @@
   flex-direction: column;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: flex-end;*/
+  justify-content: flex-end;
   position: relative;
+  height: 100vh;
+  width: 100%;
 }
 
-/*.background-container {
+.background-container {
   position: absolute;
+  left: 10%;
+  padding-top: 5%;
+  transform: translate(0, 0);
+  width: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  left: 100% / 12;
-  width: 30%;
-  height: 100vh;
   overflow: hidden;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -219,15 +211,13 @@
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
-  width: 40%;
-  height: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: left;
   -ms-flex-pack: left;
   justify-content: left;
-}*/
+}
 
 .scroll-container {
   overflow: hidden;
@@ -241,22 +231,32 @@
   grid-template-columns: 33% auto 33%;
   grid-template-rows: 50% 50%;
   row-gap: 10%;
-  padding-top: 10%;
+  padding-top: 30%;
+  padding-bottom: 11%;
   align-items: center;
+  background-color: aqua;
 }
 #txt4 {
-  grid-column-start: 1;
+  grid-column-start: 2;
   grid-column-end: 4;
   grid-row-start: 1;
-  padding: 11% 5% 3%;
-  width: 50%;
+  width: 60%;
+  margin-top: 10%;
+  padding-top: 10%;
+  padding-left: 40%;
   place-self: center;
 }
 
-#div_img4 {
-  grid-column-start: 2;
+.div_img4 {
+  grid-column-start: 1;
+  grid-column-end: 4;
   grid-row-start: 2;
   place-self: center;
+}
+
+#img4 {
+  position: absolute;
+  padding-left: 0%;
 }
 
 /*-----------------------------------*/
@@ -266,7 +266,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 100%;
-  padding-top: 11%;
+
   align-items: center;
 }
 

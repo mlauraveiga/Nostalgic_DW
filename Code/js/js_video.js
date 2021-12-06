@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 var video = document.getElementById("video");
 var video_duration;
 
@@ -50,8 +52,8 @@ function scrollTrigger() {
     trigger: "#videobox",
     start: "top top",
     end: "bottom bottom",
-    markers: true,
-    pin: "",
+    //markers: true,
+    pin: "#txt3",
   });
 
   sections.forEach((step, i) => {

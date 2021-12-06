@@ -10,83 +10,68 @@ gsap.to("section.cover-container", {
   yPercent: -50,
   ease: "none",
 });
+/*-----------------------------------*/
+/*--------------BLOCK 2--------------*/
+/*-----------------------------------*/
 
-// Bloco 3 vídeo
-var video = document.getElementById("video");
-var video_duration;
+ScrollTrigger.create({
+  trigger: ".block2_container",
+  start: "top 10%",
+  end: "bottom bottom",
+  scrub: true,
+  pin: true,
+  //markers: true,
+});
 
-//------------------------------------------------------ Adicionar blocos consoante tempo do vídeo
-function tempo() {
-  // Quando tiver os dados do vídeo, corre as funções
-  video.onloadedmetadata = function () {
-    // Duração do vídeo
-    video_duration = Math.round(video.duration);
-
-    // Função que cria novo bloco (section)
-    function addSection(seg) {
-      var newSection = document.createElement("section");
-      newSection.setAttribute("id", "bloco" + seg);
-      newSection.setAttribute("class", "blocos");
-
-      var scrollContainer = document.getElementById("scroll-container");
-      scrollContainer.appendChild(newSection);
-    }
-
-    // Criar elementos HTML (x segundos = x blocos(section))
-    for (let i = 0; i < video_duration; i++) {
-      addSection(i);
-    }
-
-    // Chamar scrollTrigger
-    scrollTrigger();
-  };
-}
-
-//------------------------------------------------------ ScrollTrigger
-function scrollTrigger() {
-  // -------------------------- Video
-  video.pause();
-  video.currentTime = 0;
-
-  // Alterar tempo do vídeo com scroll
-  // Cada bloco (section) representa um segundo
-  let sections = gsap.utils.toArray(".blocos");
-
-  ScrollTrigger.create({
-    trigger: "#videobox",
-    start: "top top",
+gsap.to("#jexp1", {
+  opacity: 0,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".block2_container",
+    start: "top 10%",
     end: "bottom bottom",
+    scrub: true,
+    pin: true,
     //markers: true,
-    pin: "#background-container",
-  });
+  },
+});
 
-  ScrollTrigger.create({
-    trigger: "#videobox",
-    start: "top top",
+gsap.to("#jexp2", {
+  opacity: 1,
+  ease: "none",
+  scrollTrigger: {
+    trigger: ".block2_container",
+    start: "top 10%10",
     end: "bottom bottom",
-    // markers: true,
-    pin: "",
-  });
+    scrub: true,
+    pin: true,
+    //markers: true,
+  },
+});
+/*-----------------------------------*/
+/*-----------------------------------*/
+/*-----------------------------------*/
 
-  sections.forEach((step, i) => {
-    gsap.fromTo(
-      video,
-      { currentTime: i },
-      {
-        scrollTrigger: {
-          trigger: step,
-          scrub: true,
-          start: "top bottom",
-          end: "bottom bottom",
-          toggleActions: "start pause resume pause",
-        },
-        currentTime: i + 1,
-        duration: 2,
-        ease: "none",
-      }
-    );
-  });
-}
+/*-----------------------------------*/
+/*--------------BLOCK 4--------------*/
+/*-----------------------------------*/
+gsap.registerPlugin(ScrollTrigger);
+
+var image = document.getElementById("img4");
+
+gsap.to(".div_img4", {
+  x: image.width,
+  duration: 8,
+  scrollTrigger: {
+    trigger: "#txt4",
+    start: "top top",
+    end: "bottom top",
+    scrub: 1,
+    markers: true,
+    pin: true,
+  },
+});
+
 /*--------------------------------------
 -----------------BLOCO 11---------------
 ---------------------------------------
