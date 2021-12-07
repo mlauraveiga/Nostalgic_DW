@@ -4,7 +4,22 @@
   html {
     scroll-behavior: smooth;
   }
+  .menuh {
+    color: black;
+    font-family: Poppins, sans-serif;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 5%;
+    margin-top: -48%;
+  }
 
+  .menuh > a {
+    text-decoration: none;
+    color: black;
+  }
   .container {
     /*background: black;*/
     /*color: #F8F4F2;*/
@@ -71,9 +86,9 @@
   }
 
   /*HOMEPAGE*/
-  .menu {
-    margin-top: -45%;
-  }
+  /*.menuh {
+    margin-top: -115%;
+  }*/
 
   .section {
     align-items: center;
@@ -406,8 +421,16 @@
   }
 
   /*HOMEPAGE*/
-  .menu {
-    margin-top: -95%;
+  .menuh {
+    margin-top: -109%;
+    color: black;
+    font-family: Poppins, sans-serif;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 5%;
   }
 
   .section {

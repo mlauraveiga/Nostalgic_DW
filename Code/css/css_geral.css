@@ -27,7 +27,7 @@
     flex-wrap: wrap;
     justify-content: left;
     margin-left: 5%;
-    margin-top: -50%;
+    /* margin-top: -50%;*/
   }
 
   .menu > a {
@@ -70,7 +70,7 @@
     flex-wrap: wrap;
     justify-content: left;
     margin-left: 3%;
-    margin-top: -115%;
+    /* margin-top: -115%;*/
   }
 
   .menu > a {

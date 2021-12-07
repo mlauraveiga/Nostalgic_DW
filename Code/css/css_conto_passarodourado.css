@@ -442,21 +442,21 @@
 
   #img_cage1:hover,
   #img_cage2:hover {
-    opacity: 0%;
+    opacity: 0;
   }
 
   #img_cage_gold {
-    left: 6.1%;
+    left: 5.5%;
     padding-top: 0.2%;
     position: absolute;
-    opacity: 0%;
+    opacity: 0;
     z-index: 3;
   }
 
   #img_cage_wood {
     position: absolute;
     left: 29.89%;
-    opacity: 0%;
+    opacity: 0;
     z-index: 4;
   }
 
@@ -573,8 +573,13 @@
 
   #img_cavalo {
     transform: translate(-95%, -5%);
-
     position: absolute;
+  }
+
+  #img_cavalo_cor {
+    transform: translate(-94%, -6%);
+    position: absolute;
+    opacity: 0;
   }
 
   #img_princesa {
@@ -582,11 +587,28 @@
     position: absolute;
   }
 
+  #img_princesa_cor {
+    transform: translate(-305%, -36%);
+    position: absolute;
+    opacity: 0;
+  }
+
   #img_passaro {
     transform: translate(-435%, -15%);
     position: absolute;
   }
 
+  #img_passaro_cor {
+    transform: translate(-434%, -14%);
+    position: absolute;
+    opacity: 0;
+  }
+
+  #img_cavalo_cor:hover,
+  #img_princesa_cor:hover,
+  #img_passaro_cor:hover {
+    opacity: 100%;
+  }
   /*-----------------------------------*/
   /*-------------BLOCK 15--------------*/
   /*-----------------------------------*/
@@ -792,6 +814,7 @@
     width: 70%;
     place-self: center;
     font-size: 20pt;
+    line-height: 1.1em;
   }
 
   .div_img2 {
@@ -828,6 +851,7 @@
     width: 70%;
     place-self: center;
     font-size: 20pt;
+    line-height: 1.1em;
   }
 
   #video {
@@ -915,6 +939,7 @@
     top: 10%;
     place-self: center;
     font-size: 20pt;
+    line-height: 1.1em;
   }
 
   #img4 {
@@ -938,6 +963,7 @@
     place-self: center;
     width: 70%;
     font-size: 20pt;
+    line-height: 1.1em;
   }
 
   .div_img5 {
@@ -975,6 +1001,7 @@
     place-self: center;
     width: 70%;
     font-size: 20pt;
+    line-height: 1.1em;
   }
 
   .img6 {
@@ -1030,6 +1057,7 @@
     place-self: center;
     width: 60%;
     font-size: 20pt;
+    line-height: 1.1em;
   }
 
   /*.div_img8 {
@@ -1059,6 +1087,7 @@
     place-self: center;
     width: 70%;
     font-size: 20pt;
+    line-height: 1.1em;
   }
 
   .img9 {
@@ -1082,7 +1111,7 @@
   }
 
   #img_cage_gold {
-    left: 3.4%;
+    left: 2.5%;
     padding-top: 0.2%;
     position: absolute;
     opacity: 0%;
@@ -1116,7 +1145,7 @@
     grid-row-start: 1;
     width: 62%;
     place-self: center;
-    font-size: 20pt;
+    font-size: 14pt;
   }
 
   /*-----------------------------------*/
@@ -1141,6 +1170,7 @@
     place-self: center;
     width: 70%;
     font-size: 20pt;
+    line-height: 1.1em;
   }
 
   .div_img11 {
@@ -1202,6 +1232,7 @@
     place-self: center;
     width: 70%;
     font-size: 20pt;
+    line-height: 1.1em;
   }
 
   .div_img13 {
@@ -1215,14 +1246,38 @@
     position: absolute;
   }
 
+  #img_cavalo_cor {
+    transform: translate(-94%, -6%);
+    position: absolute;
+    opacity: 0;
+  }
+
   #img_princesa {
     transform: translate(-305%, -35%);
     position: absolute;
   }
 
-  #img_passaro {
-    transform: translate(-435%, -15%);
+  #img_princesa_cor {
+    transform: translate(-305%, -36%);
     position: absolute;
+    opacity: 0;
+  }
+
+  #img_passaro {
+    transform: translate(-434%, -15%);
+    position: absolute;
+  }
+
+  #img_passaro_cor {
+    transform: translate(-434%, -14%);
+    position: absolute;
+    opacity: 0;
+  }
+
+  #img_cavalo_cor:hover,
+  #img_princesa_cor:hover,
+  #img_passaro_cor:hover {
+    opacity: 100%;
   }
 
   /*-----------------------------------*/
@@ -1242,6 +1297,7 @@
     width: 60%;
     padding: 15% 20%;
     font-size: 20pt;
+    line-height: 1.1em;
   }
 
   .fundo {
