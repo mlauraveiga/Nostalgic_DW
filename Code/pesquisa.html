@@ -1,51 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="stylesheet" type="text/css" href="css/css_pesquisa.css">
-    <link rel="stylesheet" type="text/css" href="css/css_geral.css">
-    <meta charset="UTF-8">
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/css_pesquisa.css" />
+    <link rel="stylesheet" type="text/css" href="css/css_geral.css" />
+    <meta charset="UTF-8" />
     <title>Pesquisa</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>
+      <div class="menu">
+        <a href="homepage.html#homepage"
+          ><img
+            class="imagemhome"
+            src="imagens/menu/home.png"
+            alt="imagem da Homepage"
+            width="30"
+            height="30"
+        /></a>
+        <a href="pesquisa.html"
+          ><img
+            class="imagempesquisa"
+            src="imagens/menu/pesquisa.png"
+            alt="imagem da Pesquisa"
+            width="30"
+            height="30"
+        /></a>
+        <a href="aboutus.html"
+          ><img
+            class="imagemabout"
+            src="imagens/menu/aboutus.png"
+            alt="imagem do About Us"
+            width="30"
+            height="38"
+        /></a>
+      </div>
+    </header>
 
-<header>
-    <div class="menu">
-        <a href="homepage.html"><img class="imagemhome" src="imagens/menu/home.png" alt="imagem da Homepage" width="30" height="30"/></a>
-        <a href="pesquisa.html"><img class="imagempesquisa" src="imagens/menu/pesquisa.png" alt="imagem da Pesquisa" width="30" height="30"/></a>
-        <a href="aboutus.html"><img class="imagemabout" src="imagens/menu/aboutus.png" alt="imagem do About Us" width="30" height="38"/></a>
-    </div>
-</header>
-
-<main>
-    <form class="pesquisa">
+    <main>
+      <form class="pesquisa">
         <fieldset class="pesquisa2">
-            <input type="search" name="busca" placeholder="Escreva aqui o conto que procura..." class="campo" required>
-            <input type="submit" name="enviar" value="Pesquisar" class="btn">
+          <input
+            type="search"
+            name="busca"
+            id="search"
+            placeholder="Escreva aqui o conto que procura..."
+            class="campo"
+            required
+            onchange="openPage()"
+          />
+          <input type="submit" name="enviar" value="Pesquisar" class="btn" />
         </fieldset>
-    </form>
+      </form>
 
-    <div class="destaques_pesquisa">
+      <div class="destaques_pesquisa">
         <div class="destaque1">
-            <a href="conto_brancadeneve.html"><img class="imagemdestaque" src="imagens/capacontos/brancadeneve.png" alt="imagem da Branca de Neve" width="250" height="250"/></a>
-            <p class="menupalavra">Branca de Neve</p>
+          <a href="conto_brancadeneve.html"
+            ><img
+              class="imagemdestaque"
+              src="imagens/capacontos/brancadeneve.png"
+              alt="imagem da Branca de Neve"
+              width="250"
+              height="250"
+          /></a>
+          <p class="menupalavra">Branca de Neve</p>
         </div>
 
         <div class="destaque2">
-            <a href="conto_capuchinhovermelho.html"><img class="imagemdestaque" src="imagens/capacontos/capuchinhovermelho.png" alt="imagem da Capuchinho Vermelho" width="250" height="250"/></a>
-            <p class="menupalavra">Capuchinho Vermelho</p>
+          <a href="conto_capuchinhovermelho.html"
+            ><img
+              class="imagemdestaque"
+              src="imagens/capacontos/capuchinhovermelho.png"
+              alt="imagem da Capuchinho Vermelho"
+              width="250"
+              height="250"
+          /></a>
+          <p class="menupalavra">Capuchinho Vermelho</p>
         </div>
 
         <div class="destaque3">
-            <a href="conto_passarodourado.html"><img class="imagemdestaque" src="imagens/capacontos/passarodourado.png" alt="imagem do Pássaro Dourado" width="250" height="250"/></a>
-            <p class="menupalavra">O Pássaro Dourado</p>
+          <a href="conto_passarodourado.html"
+            ><img
+              class="imagemdestaque"
+              src="imagens/capacontos/passarodourado.png"
+              alt="imagem do Pássaro Dourado"
+              width="250"
+              height="250"
+          /></a>
+          <p class="menupalavra">O Pássaro Dourado</p>
         </div>
 
         <div class="destaque4">
-            <a href="conto_cinderela.html"><img class="imagemdestaque" src="imagens/capacontos/cinderela.png" alt="imagem da Cinderela" width="245" height="245"/></a>
-            <p class="menupalavra">Cinderela</p>
+          <img
+            class="imagemdestaque"
+            src="imagens/capacontos/bloqueado.png"
+            alt="imagem do cadeado"
+            width="240"
+            height="240"
+          />
+          <p class="menupalavra">Cinderela</p>
+          <p class="mensagemerro">História por escrever</p>
         </div>
-    </div>
-</main>
+      </div>
+    </main>
 
-</body>
+    <script src="js/js_pesquisa.js"></script>
+  </body>
 </html>

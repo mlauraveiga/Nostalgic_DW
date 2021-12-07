@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="css/css_homepage.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/css_homepage.css">-->
     <link rel="stylesheet" type="text/css" href="css/css_geral.css">
     <link rel="stylesheet" type="text/css" href="css/css_conto_passarodourado.css">
+    <link rel="stylesheet" type="text/css" href="css/css_conto_popup.css" />
     <meta charset="UTF-8">
     <title>Pássaro Dourado</title>
 </head>
 <body>
 
+
+<!------------------------------------->
+<!---------------HEADER---------------->
+<!------------------------------------->
 <header>
-    <div class="menu">
-        <a href="homepage.html"><img class="imagemhome" src="imagens/menu/home.png" alt="imagem da Homepage" width="30"
-                                     height="30"/></a>
-        <a href="aboutus.html"><img class="imagemabout" src="imagens/menu/aboutus.png" alt="imagem do About Us" width="30"
-                                    height="38"/></a>
-    </div>
+  <div class="menup">
+    <a class="apopup">
+      <img
+        class="imagemhome"
+        src="imagens/menu/home.png"
+        alt="imagem da Homepage"
+        width="30"
+        height="30"
+        onclick="return homepage()"
+      />
+    </a>
+    <a class="apopup">
+      <img
+        class="imagemabout"
+        src="imagens/menu/aboutus.png"
+        alt="imagem do About Us"
+        width="30"
+        height="38"
+        onclick="return aboutus()"
+      />
+    </a>
+  </div>
 </header>
+
+
 <!--------------------------------------->
-    <!---------------COVER------------------->
-    <!--------------------------------------->
+<!---------------COVER------------------->
+<!--------------------------------------->
     <section class="cover">
         <section class="cover-container blue">
           <div class="cover_content">
@@ -32,7 +55,7 @@
               height="auto"
             />
             <div class="scroll-down">
-              Scroll down
+             <p> Scroll down</p>
               <div class="arrow"></div>
             </div>
           </div>
@@ -57,42 +80,97 @@
 <!--------------------------------------->
 <!--------------BLOCK 2------------------>
 <!--------------------------------------->
+
 <div class= "block2_container">
-   <div class="img2">
+
+    <div class="div_img2">
+        <img
+          src="imagens/passaro/jardineiro.png"
+          alt="imagem"
+          id="jardineiro"
+          class="image"
+          width="400"
+          height="auto"
+        />
+       <img
+          src="imagens/passaro/jardineiroExpressão1.png"
+          alt="imagem"
+          id="jexp1"
+          class="image"
+          class="mask"
+          width="400"
+          height="auto"
+        />
+        <img
+          src="imagens/passaro/jardineiroExpressão2.png"
+          alt="imagem"
+          id="jexp2"
+          class="image"
+          class="mask"
+          width="400"
+          height="auto"
+        />
+      </div>
+   <!--<div class="img2">
        <p>img bloco 2</p>
-   </div>
+   </div>-->
    <p id="txt2">
     Um dia o jardineiro foi ter com o rei, muito assustado, e disse-lhe:
     <br>– Majestade, na noite passada roubaram uma maçã da árvore. Vou mandar o meu filho mais velho montar 
      guarda esta noite, a ver se o roubo não se repete.
     </p>
+ 
 </div>
 
 <!--------------------------------------->
 <!--------------BLOCO 3------------------>
 <!--------------------------------------->
 <div class= "block3_container">
-    <div class="img3">
-        <p>img bloco 3</p>
-    </div>
+        <!-- Video -->
+        <div id="videobox">
+          <!-- Vídeo -->
+          <div id="background-container" class="background-container">
+            <div id="video-container" class="video-container">
+              <video
+                src="imagens/passaro/Árvore.mp4"
+                width="500"
+                height="auto"
+                type="video/mp4"
+                id="video"
+                preload="auto"
+                muted=""
+                plays-inline=""
+              ></video>
+            </div>
+          </div>
+       
+          <!-- Steps -->
+          <div id="scroll-container" class="scroll-container"></div>
+        </div>
+  
     <p id="txt3">
      Assim fez, mas voltou a ser roubada uma maçã de ouro, e o mesmo aconteceu todas as noite, sem que o filho 
      do jardineiro, nem ninguém, pudesse resistir ao sono, e todas as manhãs havia uma maçã a menos na árvore prodigiosa.
 
      </p>
  </div>
-
+ <div class= "auxilio_container">
+   </div>
 <!--------------------------------------->
 <!--------------BLOCO 4------------------>
 <!--------------------------------------->
 <div class= "block4_container">
+
     <p id="txt4">
         Puseram de guarda o filho mais novo do jardineiro e o jovem viu que um pássaro dourado apanhava uma maçã 
         e a levava. O rapaz disparou uma flecha certeira, mas só conseguiu fazer cair uma pena do pássaro.
      </p>
-     <div class="img4">
-        <p>img bloco 4</p>
-    </div>
+
+     <!--Imagem-->
+     <div class="div_img4">
+        <img src="imagens/passaro/setascroll.png" alt="imagem" id="img4" width="350" height="auto" />
+      </div>
+  
  </div>
 
 <!--------------------------------------->
@@ -103,9 +181,32 @@
         A pena era de ouro maciço e o rei, dirigindo-se ao jardineiro, disse-lhe:
         <br> –  Se queres que desculpe a tua falta de cuidado, tens de me trazer o pássaro dourado. 
     </p>
-     <div class="img5">
+
+    <div class="div_img5">
+        <img src="imagens/passaro/rei.png" alt="imagem" id="rei" class="image" width="400" height="auto" />
+        
+        <img
+          src="imagens/passaro/reiExpressão1.png"
+          alt="imagem"
+          id="exp1"
+          class="image"
+          class="mask"
+          width="400"
+          height="auto"
+        />
+       <img
+          src="imagens/passaro/reiExpressão2.png"
+          alt="imagem"
+          id="exp2"
+          class="image"
+          class="mask"
+          width="400"
+          height="auto"
+        />
+      </div>
+     <!--<div class="img5">
         <p>img bloco 5</p>
-    </div>
+    </div>-->
  </div>
 
 <!--------------------------------------->
@@ -141,7 +242,6 @@
 <!--------------BLOCK 8------------------>
 <!--------------------------------------->
 <div class= "block8_container">
-    <div id="texto8">
     <p id="txt8">
         Como nenhum dos irmãos regressava, o mais novo de todos foi à procura do pássaro dourado, 
         mas quando encontrou a raposa não disparou contra ela, e a raposa disse-lhe:
@@ -151,9 +251,8 @@
     dourado dentro de uma gaiola de madeira e ao lado está uma gaiola de ouro. Agarra-o, mas não tentes mudá-lo 
     de gaiola porque te arrependerás a seguir.
     </p>
-</div>
-     <div class="img8">
-        <img src="imagens/passaro/rapazraposa.png" alt="imagem" id="rapazraposa" />
+     <div class="div_img8">
+            <img src="imagens/passaro/rapazraposa.png" alt="imagem" id="img8" width="700" height="auto"/>
     </div>
 </div>
 
@@ -189,17 +288,39 @@
 <!--------------------------------------->
 <!--------------BLOCK 11------------------>
 <!--------------------------------------->
-<div class= "block11_container">
+<div class="block11_container">
     <p id="txt11">
-        O jovem prometeu seguir as instruções, mas quando viu a gaiola de ouro não resistiu à tentação 
-        e tentou agarrá-la. Então o pássaro dourado gritou até despertar toda a criadagem, que prendeu 
-        o jovem e o levou ao senhor do castelo. 
+      O jovem prometeu seguir as instruções, mas quando viu a gaiola de ouro
+      não resistiu à tentação e tentou agarrá-la. Então o pássaro dourado
+      gritou até despertar toda a criadagem, que prendeu o jovem e o levou
+      ao senhor do castelo.
     </p>
-     <div class="img11">
-        <img id="img_saddle" src="imagens/passaro/sela.png" alt="saddle draw" width="200" height=auto>
-        <img id="img_saddle_color" src="imagens/passaro/sela_cor.png" alt="saddle color draw" width="200" height=auto>
+    <div class="div_img11">
+      <img
+        id="img_saddle"
+        src="imagens/passaro/sela_fundo.png"
+        alt="saddle draw"
+        width="200"
+        height="auto"
+      />
+
+      <img
+        id="img_saddlec"
+        src="imagens/passaro/sela_cor.png"
+        alt="saddle draw"
+        width="205"
+        height="auto"
+      />
+      <img
+        id="img_poste"
+        src="imagens/passaro/poste.png"
+        alt="poste draw"
+        width="350"
+        height="auto"
+      />
     </div>
-</div>
+  </div>
+
 <!--------------------------------------->
 <!--------------BLOCK 12------------------>
 <!--------------------------------------->
@@ -211,14 +332,143 @@
     Mas não deixes que ela se despeça dos pais.
     <br>O jovem seguiu à letra as instruções da raposa e conseguiu levar a princesa. Ao vê-los, a raposa disse:
     </p>
-   <div class="img12">
-    <p>img12</p>
-   </div>
+</div>
+
+
+<!--------------------------------------->
+<!--------------BLOCK 13----------------->
+<!--------------------------------------->
+<div class="block13_container">
+    <p id="txt13">
+        – Muito bem. Agora, se me obedeceres, terás princesa, cavalo e pássaro. 
+        <br>Como? Quando chegares diante 
+        do senhor do palácio branco, pedirás o cavalo em troca da princesa e quando o montares, pões a princesa 
+        na garupa e sais a galope, sem que ninguém te possa alcançar. Quando chegares ao castelo negro, entrarás 
+        sozinho com o cavalo e dirás que queres ver o pássaro para verificar se é o verdadeiro. Quando o tiveres 
+        
+        nas mãos, sais a correr e vens ter connosco.
+    </p>
+    <div class="div_img13">
+      <img
+        id="img_rapos2"
+        src="imagens/passaro/raposa.png"
+        alt="fox draw"
+        width="400"
+        height="auto"
+      />
+      <img
+      id="img_cavalo"
+      src="imagens/passaro/cavalo.png"
+      alt="fox draw"
+      width="200"
+      height="auto"
+    />
+    <img
+    id="img_princesa"
+    src="imagens/passaro/Ilustração_Sem_Título 27.png"
+    alt="fox draw"
+    width="100"
+    height="auto"
+  />
+  <img
+  id="img_passaro"
+  src="imagens/passaro/passaro_dourado.png"
+  alt="fox draw"
+  width="100"
+  height="auto"
+/>
+  
+    </div>
+  </div>
+
+<!--------------------------------------->
+<!--------------BLOCK 14----------------->
+<!--------------------------------------->
+  
+<!--------------------------------------->
+<!--------------BLOCK 15------------------>
+<!--------------------------------------->
+<div class= "block15_container">
+  <div class="fundo">
+    <p class="txt15">
+        Tudo decorreu com êxito e o nosso jovem herói regressou ao palácio do rei, entregou-lhe o pássaro dourado 
+        e casou com a princesinha e, quando o rei morreu, como não tinha filhos, deixou-lhe o seu reino para que 
+        o governasse.
+</p>
 </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-<script src="js/js_conto_passaro.js"></script>
+
+</div>
+
+
+
+<!------------------------------------->
+<!---------------HEADER---------------->
+<!------------------------------------->
+<header>
+  <div class="menup">
+    <a >
+      <img
+        class="imagemhome"
+        src="imagens/menu/home.png"
+        alt="imagem da Homepage"
+        width="30"
+        height="30"
+        onclick="return homepage()"
+      />
+    </a>
+    <a>
+      <img
+        class="imagemabout"
+        src="imagens/menu/aboutus.png"
+        alt="imagem do About Us"
+        width="30"
+        height="38"
+        onclick="return aboutus()"
+      />
+    </a>
+  </div>
+</header>
+
+<div class="exit-intent-popup">
+  <div class="divpopup">
+    <h3 class="txtpopup">Deseja mesmo sair do conto?</h3>
+    <div class="botoes">
+      <a  id="link" onclick="return exit()" class="apopup">
+        <img
+          src="imagens/conto_popup/Ellipse 33.png"
+          width="50px"
+          height="50px"
+        />
+        <p class="btn">Sim</p>
+      </a>
+      <a href="" class="apopup">
+        <img
+          src="imagens/conto_popup/Ellipse 34.png"
+          width="50px"
+          height="50px"
+        />
+        <p class="btn">Não</p>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+      integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"
+      integrity="sha512-Q+G390ZU2qKo+e4q+kVcJknwfGjKJOdyu5mVMcR95NqL6XaF4lY4nsSvIVB3NDP54ACsS9rqhE1DVqgpApl//Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="js/js_conto_passarodourado.js"></script>
+    <script src="js/js_conto_popup.js"></script>
 </body>
 </html>
 </body>
